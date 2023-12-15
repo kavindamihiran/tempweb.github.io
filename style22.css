@@ -132,7 +132,7 @@ header {
 
 
 
-
+start media
 
 
 
@@ -146,7 +146,7 @@ header {
 }
 
 /* Continued media queries and other CSS rules... */
-.home .row h3 {
+.home h3 {
   font-size: 8rem;
 }
 
@@ -180,7 +180,7 @@ header {
     margin: 2rem;
   }
 
-  .home .row h3 {
+  .home h3 {
     font-size: 6rem;
   }
 }
@@ -206,7 +206,7 @@ header {
     text-align: center;
   }
 
-  .home .image {
+  .home {
     flex: 1 1 40rem;
   }
 
@@ -214,7 +214,7 @@ header {
     font-size: 3rem;
   }
 
-  .home .row .image img {
+  .home .row img {
     width: 100%;
   }
 
@@ -251,6 +251,7 @@ header {
 
 
 
+end media
 
 
 
@@ -287,6 +288,8 @@ header {
   padding: 5px;
 }
 
+/* form */
+
 form {
   display: block;
   margin: 0 auto;
@@ -311,4 +314,20 @@ input[type="number"] {
 select {
   border: 2px solid red;
   border-radius: 4px;
+}
+
+#childimg {
+  margin: auto;
+  padding: 20px;
+
+  width: 700px;
+  height: 50px;
+}
+
+.raw {
+  padding-top: 20px;
+}
+
+#contactus {
+  padding-bottom: 40px;
 }
