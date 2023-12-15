@@ -58,6 +58,7 @@
             id="responsive-image"
             object-fit="contain"
             object-position="center"
+            
           />
       </div>
     </section>
@@ -100,7 +101,7 @@
 
     <!-- about section starts -->
     <section class="about" id="about">
-      <div class="raw" id="contactus">
+      <div id="contactus">
 
         <!-- <div class="image">
           <img src="about-img.jpg" alt="About Image" />
@@ -175,52 +176,57 @@
           </div>
         </section>
 
-        <!-- Add more slides as needed -->
-      </div>
-    </section>
+
     <!-- subject section ends -->
 
     <!-- teachers section starts -->
     <section class="teachers" id="teachers">
-      <h1 class="heading"><span>expert tutors</span></h1>
-      <div class="swiper teachers-slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide slide">
+      <h1 class="heading" id ="tutors"><span>expert tutors</span></h1>
+
+      <div class="swiper-wrapper">
+      
             <!-- Replace with your image path -->
+            <div class="column">
             <img src="tutor-2.jpg" alt="Tutor 1" height="250" width="250" />
-            <h3>Tutor 1</h3>
-          </div>
-          <div class="swiper-slide slide">
+            <caption>Tutor 1</caption>
+            </div>
+
+
             <!-- Replace with your image path -->
-            <<img src="tutor-3.jpg" alt="Tutor 2" height="250" width="250" />>
-            <h3>Tutor 2</h3>
-          </div>
-          <div class="swiper-slide slide">
+            <div class="column">
+            <img src="tutor-3.jpg" alt="Tutor 2" height="250" width="250" />
+            <caption>Tutor 2</caption>
+            </div>
+
+
+          
             <!-- Replace with your image path -->
-            <<img src="tutor-4.jpg" alt="Tutor 3" height="250" width="250" />>
-            <h3>Tutor 3</h3>
-          </div>
-          <div class="swiper-slide slide">
+            <div class="column">
+            <img src="tutor-4.jpg" alt="Tutor 3" height="250" width="250" />
+            <caption>Tutor 3</caption>
+            </div>
+
+
+          
             <!-- Replace with your image path -->
-            <<img src="tutor-5.jpg" alt="Tutor 4" height="250" width="250" />>
-            <h3>Tutor 4</h3>
+            <div class="column">
+            <img src="tutor-5.jpg" alt="Tutor 4" height="250" width="250" />
+            <caption>Tutor 4</caption>
+            </div>
           </div>
-          <!-- Add more slides as needed -->
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
+        
     </section>
+    <br><br>
+
     <!-- teachers section ends -->
 
     <!-- reviews section starts -->
     <section class="reviews" id="reviews">
       <h1 class="heading"><span>Student's reviews</span></h1>
-      <div class="swiper reviews-slider">
         <div class="swiper-wrapper">
           <!-- Add your review slides here -->
         </div>
-        <div class="swiper-pagination"></div>
-      </div>
+      
     </section>
     <!-- reviews section ends -->
 
@@ -230,7 +236,7 @@
       <div class="raw">
         <div class="image">
           <!-- Replace with your image path -->
-          <<img src="contact-img.jpg" alt="" height="250" width="250" />>
+          <img src="contact-img.jpg" alt="" height="250" width="250" />
         </div>
         
         
@@ -257,7 +263,7 @@
           />
 
           <br><br>
-          <span>Your number</span>
+          <span>Phone number</span>
           <input
             type="number"
             required
@@ -278,7 +284,8 @@
           </select>
 
           <br><br>
-          <span>Select gender</span>
+          <span>Select gender &nbsp; &nbsp; </span>
+          <label for="male">Female</label>
             <input type="radio" name="gender" value="male" id="male" />
             <label for="male">Male</label>
             <input type="radio" name="gender" value="female" id="female" />
@@ -311,7 +318,7 @@
 
     <!-- swiper js link -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <!-- custom js file link -->
-    <script src="script1.js"></script>
+
+
   </body>
 </html>
