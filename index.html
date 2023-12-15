@@ -21,6 +21,8 @@
 
     <!-- script -->
     <script src="script.js"></script>
+
+
   </head>
   <body align="center">
     <!-- header section starts -->
@@ -45,16 +47,16 @@
     <section class="home" id="home">
       <div class="row">
         <div class="content">
-          <h3>Online <span>Education</span></h3>
+          <h3 align="center">Online Education</h3>
 
           <!-- <a href="#contact" class="btn">contact us</a> -->
         </div>
         <div class="image">
-          <<img
+          <img
             src="home-img.jpg"
             alt="childrenstudying"
             id="responsive-image"
-          />>
+          />
         </div>
       </div>
     </section>
@@ -98,11 +100,13 @@
     <!-- about section starts -->
     <section class="about" id="about">
       <div class="row">
-        <div class="image">
-          <!-- Replace with your image path -->
+
+        <!-- <div class="image">
           <img src="about-img.jpg" alt="About Image" />
-        </div>
+        </div> -->
+
         <div class="content">
+          <br><br>
           <h3>Why choose us?</h3>
           <a href="#contact" class="btn">contact us</a>
         </div>
@@ -110,51 +114,75 @@
     </section>
     <!-- about section ends -->
 
-    <!-- subject section starts -->
+
+        <!-- subject section starts -->
     <section class="stream" id="stream">
-      <h1 class="heading">Our <span>Subjects</span></h1>
-      <div class="stream-slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide slide">
-            <!-- Replace with your image path -->
-            <img src="course-1.jpg" alt="Maths" height="250" width="250" />
-            <h1>Maths Stream</h1>
+          <h1 class="heading"><span>Our Subjects</span></h1>
+            <div class="row">
+              <!-- Replace with your image path -->
+
+              <div class="column">
+                <img src="course-1.jpg" alt="Maths" height="250" width="250" />
+                <!-- <caption>
+                  Maths Stream
+                </caption> -->
+              </div>
+
+              <div class="column">
+                <!-- Replace with your image path -->
+                <img
+                  src="course-2.jpg"
+                  alt="Biology"
+                  height="250"
+                  width="250"
+                />
+                <!-- <caption>
+                  Biology
+                </caption> -->
+              </div>
+
+              <div class="column">
+                <!-- Replace with your image path -->
+                <img src="course-3.jpg" alt="BST" height="250" width="250" />
+                <!-- <caption>
+                  Bio system technology
+                </caption> -->
+              </div>
+
+              <div class="column">
+                <!-- Replace with your image path -->
+                <img src="course-4.jpg" alt="ET" height="250" width="250" />
+                <!-- <caption>
+                  Engineering Technology
+                </caption> -->
+              </div>
+
+              <div class="column">
+                <!-- Replace with your image path -->
+                <img src="course-5.jpg" alt="Art" height="250" width="250" />
+                <!-- <caption>
+                  Art
+                </caption> -->
+              </div>
+
+              <div class="column">
+                <!-- Replace with your image path -->
+                <img src="course-6.jpg" alt="ET" height="250" width="250" />
+                <!-- <caption>
+                  Commerce Stream
+                </caption> -->
+              </div>
           </div>
-          <div class="swiper-slide slide">
-            <!-- Replace with your image path -->
-            <img src="course-2.jpg" alt="Biology" height="250" width="250" />
-            <h1>Biology</h1>
-          </div>
-          <div class="swiper-slide slide">
-            <!-- Replace with your image path -->
-            <img src="course-3.jpg" alt="BST" height="250" width="250" />
-            <h1>Bio system technology</h1>
-          </div>
-          <div class="swiper-slide slide">
-            <!-- Replace with your image path -->
-            <img src="course-4.jpg" alt="ET" height="250" width="250" />
-            <h1>Engineering Technology</h1>
-          </div>
-          <div class="swiper-slide slide">
-            <!-- Replace with your image path -->
-            <img src="course-5.jpg" alt="Art" height="250" width="250" />
-            <h1>Art</h1>
-          </div>
-          <div class="swiper-slide slide">
-            <!-- Replace with your image path -->
-            <img src="course-6.jpg" alt="ET" height="250" width="250" />
-            <h1>Commerce Stream</h1>
-          </div>
-          <!-- Add more slides as needed -->
-        </div>
-        <div class="swiper-pagination"></div>
+        </section>
+
+        <!-- Add more slides as needed -->
       </div>
     </section>
     <!-- subject section ends -->
 
     <!-- teachers section starts -->
     <section class="teachers" id="teachers">
-      <h1 class="heading">expert <span>tutors</span></h1>
+      <h1 class="heading"><span>expert tutors</span></h1>
       <div class="swiper teachers-slider">
         <div class="swiper-wrapper">
           <div class="swiper-slide slide">
@@ -186,7 +214,7 @@
 
     <!-- reviews section starts -->
     <section class="reviews" id="reviews">
-      <h1 class="heading">Student's <span>reviews</span></h1>
+      <h1 class="heading"><span>Student's reviews</span></h1>
       <div class="swiper reviews-slider">
         <div class="swiper-wrapper">
           <!-- Add your review slides here -->
@@ -198,12 +226,14 @@
 
     <!-- contact section starts -->
     <section class="contact" id="contact">
-      <h1 class="heading"><span>contact</span> us</h1>
-      <div class="row">
+      <h1 class="heading"><span>contact us</span></h1>
+      <div class="raw">
         <div class="image">
           <!-- Replace with your image path -->
           <<img src="contact-img.jpg" alt="" height="250" width="250" />>
         </div>
+        
+        
         <form action="" method="post">
           <span>Your name</span>
           <input
@@ -214,6 +244,8 @@
             name="name"
             class="box"
           />
+
+          <br>
           <span>Your email</span>
           <input
             type="email"
@@ -223,6 +255,8 @@
             name="email"
             class="box"
           />
+
+          <br>
           <span>Your number</span>
           <input
             type="number"
@@ -234,18 +268,25 @@
             class="box"
             onkeypress="if(this.value.length == 10) return false;"
           />
+
+          <br>
           <span>Select course</span>
           <select name="courses" class="box" required>
-            <!-- Add course options here -->
+            <option value="">Maths</option>
+            <option value="">Bio</option>
+            <option value="">Art</option>
           </select>
+
+          <br>
           <span>Select gender</span>
-          <div class="radio">
             <input type="radio" name="gender" value="male" id="male" />
             <label for="male">Male</label>
             <input type="radio" name="gender" value="female" id="female" />
-            <label for="female">Female</label>
-          </div>
+          
+            <br><br>
           <input type="submit" value="Send message" class="btn" name="send" />
+
+          
         </form>
       </div>
     </section>
