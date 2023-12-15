@@ -90,7 +90,7 @@ body {
 }
 
 header {
-  position: fixed; /* Corrected the spelling */
+  position: relative; /* Corrected the spelling */
   top: 0;
   left: 0;
   right: 0;
