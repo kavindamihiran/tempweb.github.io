@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap'); 
+/* Fixed the @import syntax */
+
+:root 
+{
+    --green: #00E77F;
+    --white: #fff;
+    --light-white: #aaa;
+    --black: #3d3d3d;
+    --light-bg: #4b4b4b;
+}
+
+*{
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+    text-transform: capitalize;
+}
+
+*::selection {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+html 
+{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+}
+
+/* Corrected the scrollbar syntax */
+::-webkit-scrollbar {
+    height: .5rem;
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--green);
+    border-radius: 5rem;
+}
+
+body {
+    background-color: var(--white);
+}
+
+/* Fixed the selector for selection */
+::selection {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background-color: var(--light-bg);
+    cursor: pointer; /* Corrected the spelling */
+    color: var(--blue);
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+}
+
+.btn:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+/* Moved the .heading outside of .btn:hover */
+.heading {
+    margin-bottom: 2.5rem;
+    text-align: center;
+    font-size: 4rem;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.heading span {
+    color: var(--green);
+    text-transform: uppercase;
+}
+
+header {
+    position: fixed; /* Corrected the spelling */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Corrected the capitalization */
+    background-color: var(--light-bg);
+}
+
+.header .flex {
+    position: relative; /* Corrected the spelling */
+    display: flex; /* Corrected the spelling */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .flex .logo {
+    font-size: 2.5rem;
+    color: var(--green);
+}
+
+.header .flex .navbar a {
+    margin-left: 2rem;
+    color: var(--green);
+    font-size: 2rem;
+}
+
+.header .flex .navbar a:hover {
+    color: var(--green);
+}
+
+#menu-btn {
+    cursor: pointer;
+    color: var(--black);
+    font-size: 2.5rem;
+    display: none;
+}
+
+/* Corrected the media query syntax */
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+/* Continued media queries and other CSS rules... */
+.home .row .content h3 {
+    font-size: 8rem;
+}
+
+@media (max-width: 768px) {
+    #menu-btn {
+        display: inline-block;
+    }
+
+    #menu-btn.fa-times {
+        transform: rotate(180deg); /* Corrected the spelling */
+    }
+
+    .header .flex .navbar {
+        position: absolute; /* Corrected the spelling */
+        top: 99%;
+        left: 0;
+        right: 0;
+        border-top: .1rem solid var(--light-white);
+        border-bottom: .1rem solid var(--light-white);
+        background-color: var(--light-bg);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Corrected the syntax */
+    }
+
+    .header .flex .navbar a {
+        display: block; /* Corrected the spelling */
+        margin: 2rem;
+    }
+
+    .home .row .content h3 {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .home {
+        margin-top: 6rem;
+    }
+
+    .home .row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+        gap: 1.5rem;
+    }
+
+    .home .content {
+        flex: 1 1 40rem;
+        text-align: center;
+    }
+
+    .home .image {
+        flex: 1 1 40rem;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+
+    .home .row .image img {
+        width: 100%;
+    }
+
+    .home .row .content h3 {
+        margin-bottom: 1rem;
+        font-size: 10rem;
+        color: var(--blue);
+        line-height: 1;
+    }
+
+    .home .row .content h3 span {
+        color: var(--green);
+    }
+	
+    .count.box-container{
+		display:grid;
+		grid-template-coloumn:repeat(auto-fit,minmax(27rem,1fr))
+		gap:1.5rem;
+		align-item:center;
+		justify-content:center;
+		gap:1.5rem;
+	}
+	
+    .count.box-container.box i{
+		font-size:5rem;
+		color:var(--green);
+	}
+
+    #responsive-image {
+        width: 100%; /* Set the image width to 100% of the container */
+        height: auto; /* Set the image height to auto, which scales it according to the aspect ratio */
+    }
+
+
+
+    /* ... Continued with the rest of the CSS rules ... */
+
+    /* Ensure that the closing curly braces for media queries are properly placed */
+}
+
